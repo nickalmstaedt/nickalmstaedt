@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -696,8 +696,71 @@
 <footer>
   <span class="footer-brand">N · ALMSTÄDT</span>
   <p>Strategic Advisory in International Security &amp; Defence</p>
-  <p>© 2026 Nick Almstädt · Sarajevo / Germany</p>
+  <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+    <p>© 2026 Nick Almstädt · Berlin &amp; Sarajevo</p>
+    <span style="color:var(--border)">|</span>
+    <button onclick="document.getElementById('impressum-modal').style.display='flex'" style="background:none;border:none;cursor:pointer;font-size:0.72rem;letter-spacing:0.1em;color:var(--text-dim);font-family:inherit;">Impressum</button>
+    <button onclick="document.getElementById('datenschutz-modal').style.display='flex'" style="background:none;border:none;cursor:pointer;font-size:0.72rem;letter-spacing:0.1em;color:var(--text-dim);font-family:inherit;">Datenschutz</button>
+  </div>
 </footer>
+
+<!-- IMPRESSUM MODAL -->
+<div id="impressum-modal" role="dialog" aria-modal="true" aria-labelledby="impressum-title" style="display:none;position:fixed;inset:0;z-index:999;background:#0b162899;align-items:center;justify-content:center;padding:2rem;">
+  <div style="background:var(--navy-mid);border:1px solid var(--border);max-width:600px;width:100%;max-height:80vh;overflow-y:auto;padding:3rem;position:relative;">
+    <button onclick="document.getElementById('impressum-modal').style.display='none'" aria-label="Schließen" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:var(--text-dim);font-size:1.4rem;cursor:pointer;">×</button>
+    <div style="font-size:0.7rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Impressum</div>
+    <h2 id="impressum-title" style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);margin-bottom:1.5rem;">Anbieterkennzeichnung</h2>
+    <div style="font-size:0.88rem;color:var(--text);line-height:1.9;">
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">Angaben gemäß § 5 DDG</strong></p>
+      <p style="margin-bottom:0.3rem;"><strong style="color:var(--cream);">Nick Almstädt</strong></p>
+      <p style="margin-bottom:0.3rem;">Freiberuflicher Berater für Internationale Sicherheit</p>
+      <p style="margin-bottom:1.2rem;">Rizaha Štetića 11, 71000 Sarajevo, Bosnien-Herzegowina</p>
+      <p style="margin-bottom:0.3rem;"><strong style="color:var(--cream);">Kontakt</strong></p>
+      <p style="margin-bottom:0.3rem;">Tel.: <a href="tel:+4917663269785" style="color:var(--gold);">+49 176 63269785</a></p>
+      <p style="margin-bottom:0.3rem;">E-Mail: <a href="mailto:nick@almstaedt.de" style="color:var(--gold);">nick@almstaedt.de</a></p>
+      <p style="margin-bottom:1.2rem;">E-Mail: <a href="mailto:nick.almstaedt@middle-east-minds.com" style="color:var(--gold);">nick.almstaedt@middle-east-minds.com</a></p>
+      <p style="margin-bottom:0.3rem;"><strong style="color:var(--cream);">Umsatzsteuer-ID</strong></p>
+      <p style="margin-bottom:1.2rem;">DE295628079 (gemäß § 27a Umsatzsteuergesetz)</p>
+      <p style="margin-bottom:0.3rem;"><strong style="color:var(--cream);">Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</strong></p>
+      <p style="margin-bottom:1.2rem;">Nick Almstädt, Anschrift wie oben</p>
+      <p style="margin-bottom:0.3rem;"><strong style="color:var(--cream);">Streitschlichtung</strong></p>
+      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" style="color:var(--gold);">ec.europa.eu/consumers/odr</a>. Zur Teilnahme an einem Streitbeilegungsverfahren bin ich nicht verpflichtet und nicht bereit.</p>
+    </div>
+  </div>
+</div>
+
+<!-- DATENSCHUTZ MODAL -->
+<div id="datenschutz-modal" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title" style="display:none;position:fixed;inset:0;z-index:999;background:#0b162899;align-items:center;justify-content:center;padding:2rem;">
+  <div style="background:var(--navy-mid);border:1px solid var(--border);max-width:600px;width:100%;max-height:80vh;overflow-y:auto;padding:3rem;position:relative;">
+    <button onclick="document.getElementById('datenschutz-modal').style.display='none'" aria-label="Schließen" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:var(--text-dim);font-size:1.4rem;cursor:pointer;">×</button>
+    <div style="font-size:0.7rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Datenschutz</div>
+    <h2 id="datenschutz-title" style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);margin-bottom:1.5rem;">Datenschutzerklärung</h2>
+    <div style="font-size:0.88rem;color:var(--text);line-height:1.9;">
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">1. Verantwortlicher</strong><br>Nick Almstädt, Anschrift gemäß Impressum · E-Mail: nick@almstaedt.de</p>
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">2. Erhebung personenbezogener Daten</strong><br>Diese Website erhebt keine personenbezogenen Daten durch Formulare oder Tracking-Tools. Beim Aufruf werden durch den Hosting-Anbieter (GitHub Pages) automatisch Server-Logfiles gespeichert (IP-Adresse, Browsertyp, Datum/Uhrzeit). Diese Daten sind nicht einer bestimmten Person zuordenbar.</p>
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">3. Hosting</strong><br>GitHub Pages (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" style="color:var(--gold);">GitHub Privacy Statement</a>.</p>
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">4. Google Fonts</strong><br>Diese Website lädt Schriftarten von Google Fonts (Google LLC, USA). Dabei wird Ihre IP-Adresse an Google übermittelt. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--gold);">Google Datenschutzerklärung</a>.</p>
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">5. Kontaktaufnahme</strong><br>Bei Kontaktaufnahme per E-Mail werden Ihre Angaben zur Bearbeitung gespeichert und nicht ohne Einwilligung weitergegeben. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+      <p style="margin-bottom:1rem;"><strong style="color:var(--cream);">6. Ihre Rechte</strong><br>Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21 DSGVO). Beschwerden an die zuständige Datenschutzaufsichtsbehörde.</p>
+      <p><strong style="color:var(--cream);">7. Cookies</strong><br>Diese Website verwendet keine Tracking-Cookies. Es wird lediglich eine lokale Präferenz für den Cookie-Hinweis gespeichert (localStorage).</p>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="region" aria-label="Cookie-Hinweis" style="position:fixed;bottom:0;left:0;right:0;z-index:998;background:var(--navy-mid);border-top:1px solid var(--border);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+  <p style="font-size:0.8rem;color:var(--text-dim);margin:0;">Diese Website verwendet keine Tracking-Cookies. Technisch notwendige Verbindungen zu Google Fonts und GitHub Pages können Zugriffsdaten übertragen. <button onclick="document.getElementById('datenschutz-modal').style.display='flex'" style="background:none;border:none;color:var(--gold);cursor:pointer;font-size:0.8rem;font-family:inherit;padding:0;text-decoration:underline;">Datenschutzerklärung</button></p>
+  <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookieOk','1')" style="background:var(--gold);color:var(--navy);border:none;padding:0.5rem 1.4rem;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;white-space:nowrap;font-family:inherit;">Verstanden</button>
+</div>
+
+<script>
+  if(localStorage.getItem('cookieOk')) document.getElementById('cookie-banner').style.display='none';
+  ['impressum-modal','datenschutz-modal'].forEach(function(id){
+    document.getElementById(id).addEventListener('click',function(e){
+      if(e.target===this) this.style.display='none';
+    });
+  });
+</script>
 
 </body>
 </html>
