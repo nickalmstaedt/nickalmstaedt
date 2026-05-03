@@ -458,13 +458,26 @@
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
-    .hero, section { padding: 5rem 1.5rem 4rem; }
-    .credentials-bar { padding: 1.5rem; gap: 1.5rem; }
-    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    .hero { padding: 6rem 1.5rem 3rem; min-height: 100vh; }
+    section { padding: 4rem 1.5rem; }
+
+    .credentials-bar {
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+    .cred-divider { display: none; }
+
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
     .exp-item::before { display: none; }
     .exp-period { text-align: left; padding-right: 0; }
-    footer { padding: 1.5rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .hero-cta { flex-direction: column; }
+    .btn-primary, .btn-ghost { text-align: center; }
+    footer { padding: 1.5rem; flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+    #cookie-banner { padding: 1rem 1.5rem; }
   }
 </style>
 </head>
@@ -530,7 +543,7 @@
       <h2>Where the briefing room meets the battlefield.</h2>
       <p>I am an international security professional and German Bundeswehr officer with over two decades of operational leadership across NATO, UN, and bilateral missions — from Afghanistan and Iraq to Mali, South Sudan, Djibouti, and the Western Balkans.</p>
       <p>Currently serving as DCB Crisis Management Initiative Leader for Bosnia and Herzegovina at NATO HQ International Staff in Sarajevo, I translate complex geopolitical realities into actionable strategy for defence organisations, policy institutions, and private sector clients. I have been working as an independent advisor since 2014.</p>
-      <p>Under the label <strong style="color:var(--gold)"><a href="https://middleeastminds.com" style="color:var(--gold);text-decoration:none;">Middle East Minds</a></strong>, I develop bespoke analyses and facilitate structured engagements on conflict dynamics, governance fragility, and strategic competition across the Middle East and Africa — available on request since 2023.</p>
+      <p>Under the label <strong style="color:var(--gold)"><a href="https://www.middle-east-minds.com" style="color:var(--gold);text-decoration:none;">Middle East Minds</a></strong>, I develop bespoke analyses and facilitate structured engagements on conflict dynamics, governance fragility, and strategic competition across the Middle East and Africa — available on request since 2023.</p>
     </div>
     <div class="about-facts">
       <div class="fact-item">
@@ -572,7 +585,7 @@
       <div class="service-tag">Geopolitical Intelligence</div>
       <h3>Strategic Risk &amp; Analysis</h3>
       <p>Tailored assessments for organisations operating in or exposed to fragile and conflict-affected environments. Early warning, scenario planning, and decision support — informed by first-hand operational insight.</p>
-      <a href="https://middleeastminds.com" target="_blank">Middle East Minds →</a>
+      <a href="https://www.middle-east-minds.com" target="_blank">Middle East Minds →</a>
     </div>
 
     <div class="service-card">
@@ -684,7 +697,7 @@
         <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         LinkedIn
       </a>
-      <a href="https://middleeastminds.com" target="_blank" class="contact-link">
+      <a href="https://www.middle-east-minds.com" target="_blank" class="contact-link">
         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
         Middle East Minds
       </a>
